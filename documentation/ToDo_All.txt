@@ -1,0 +1,54 @@
+ITP Projekt (Slama Discord)
+Doku/Controlling schreiben
+Projekt mit Max Sync
+WebApp im Container
+Projektjournal updaten [2h Pool änderungen, Troubleshooting // 3h User Login/Signup/Verification update, Troubleshooting // 4h Login für AWS Session angepasst (AWS Session + Credential Call implementiert)]
+"https://www.youtube.com/watch?v=oFSU6rhFETk" [API Auth]
+
+Projekt update:
+    https://www.section.io/engineering-education/session-management-in-nodejs-using-expressjs-and-express-session/ [Express-Session]
+    https://gist.github.com/kndt84/5be8e86a15468ed1c8fc3699429003ad [AWS-Session Demo, eventuell für AWS Cogntio MfA]
+    https://dev.to/ericchapman/nodejs-express-part-5-routes-and-controllers-55d3 [NodeJS Routing-Controller (Express)]
+    https://www.npmjs.com/package/ensure-login [NodeJS Ensure Login Module Demo]
+    Merge Config to cfg
+
+
+
+++ Aufgaben Teams:
+
++WebApp:
+
+    - SignUp: 
+        SES Email befinden sich im Sandbox Mode -> Senden von Emails nur auf verifizierte Mails
+	Admin Panel mit Post Request erstellen {ejs Form}
+	Drop Down Menü für Tags (Benutzerzugriff regeln)
+	Verify Funktion in SignUp Form View einbauen
+
+
+    - LogIn:
+	User loggt sich neu ein => User muss den Verification Code (Email) eingeben
+	Views überprüfen Authentifizierung(Access Token) und Autorisierung (Group Tag)
+	MfA Implementieren (Authy)
+
+
+    - Routing
+	Force User Login
+
+
+
++Android:
+
+    [Kotlin] https://docs.amplify.aws/lib/auth/getting-started/q/platform/android/#check-the-current-auth-session [User SignIn]
+    [AWS Documentation] https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/kotlin_cognito-identity-provider_code_examples.html [Auth User in Kotlin]
+    [AWS Documentation] https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/examples-cognito.html [Auth User in Java]
+
+
+
++Summary:
+
+    - show serial number of used equipment per flight
+    - add login to android app using aws cognito
+    - force user login
+    - allow organisation admins to create pilot users
+    - add login and signup to webapp
+    

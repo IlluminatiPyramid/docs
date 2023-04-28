@@ -1,10 +1,24 @@
 https://onexlab-io.medium.com/aws-cognito-node-js-cc05760b61c3 [AWS Login in Node.js App]
 https://medium.com/@prasadjay/amazon-cognito-user-pools-in-nodejs-as-fast-as-possible-22d586c5c8ec [AWS Login mit username in Node.js App]
 https://www.section.io/engineering-education/session-management-in-nodejs-using-expressjs-and-express-session/ [Express-Session]
+https://gist.github.com/kndt84/5be8e86a15468ed1c8fc3699429003ad [AWS-Session Demo, eventuell für AWS Cogntio MfA]
+https://dev.to/ericchapman/nodejs-express-part-5-routes-and-controllers-55d3 [NodeJS Routing-Controller (Express)]
+https://www.npmjs.com/package/ensure-login [NodeJS Ensure Login Module Demo]
+https://dev.to/cyberwolves/jwt-authentication-with-access-tokens-refresh-tokens-in-node-js-5aa9 [AWS Cognito Token refresh]
+
 
 aws cognito-idp admin-set-user-password --user-pool-id "" --username "" --password "" --permanent [Set status from FORCE_CHANGE_PASSWORD to CONFIRMED]
 aws cognito-idp admin-update-user-attributes --user-pool-id "" --username "" --user-attributes Name=email_verified,Value=true
 
 
-https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#adminCreateUser-property
-https://dev.to/cyberwolves/jwt-authentication-with-access-tokens-refresh-tokens-in-node-js-5aa9
+[Kotlin] https://docs.amplify.aws/lib/auth/getting-started/q/platform/android/#check-the-current-auth-session [User SignIn]
+[AWS Documentation] https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/kotlin_cognito-identity-provider_code_examples.html [Auth User in Kotlin]
+[AWS Documentation] https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/examples-cognito.html [Auth User in Java]
+
+
+
+StatusCodes:
+
+200 - OK
+400 - UserAuth Error
+405 - GetUser Error
